@@ -1,64 +1,22 @@
-//console.log("Hola Mundo");
+//EJERCICIO 1: DECODIFICADOR DE RESISTENCIA
+/*
+function decodeResistor(codigoColores: String) {
+  const colorCodificaciones: string[] = ['negro', 'marron', 'rojo', 'naranja','amarillo', 'verde', 'azul', 'violeta', 'gris', 'blanco'];
+  let codigoColoresSeparado = codigoColores.split('-');
+  let result: String = '';
 
-
-function decodeResistor(color1: string, color2: string) {
-    resistorArray.push(color1);
-    resistorArray.push(color2);
-    let colorArray = new Array(2);;
-    for(var i = 0; i < resistorArray.length; i++){
-      for(var  j = 0; j < colorArray.length; j++){
-        var colorElement = resistorArray[i];
-        switch(colorElement){  
-          case "negro":
-            colorArray[i] = 0;
-            console.log(colorArray[i]);
-          break;
-          case "marrón":
-            colorArray[i] = 1;
-            console.log(colorArray[i]);
-          break;
-          case "rojo":
-            colorArray[i] = 2;
-            console.log(colorArray[i]);
-          break;
-        case "naranja":
-            colorArray[i] = 3;
-            console.log(colorArray[i]);
-        break;
-        case "amarillo":
-            colorArray[i] = 4;
-            console.log(colorArray[i]);
-        break;
-        case "verde":
-            colorArray[i] = 5;
-            console.log(colorArray[i]);
-        break;
-        case "azul":
-            colorArray[i] = 6;
-            console.log(colorArray[i]);
-        break;
-        case "violeta":
-            colorArray[i] = 7;
-            console.log(colorArray[i]);
-        break;
-        case "gris":
-            colorArray[i] = 8;
-            console.log(colorArray[i]);
-        break;
-        case "blanco":
-            colorArray[i] = 9;
-            console.log(colorArray[i]);
-        break;
-        default:
-          return console.log("Color no reconocido");
-        break;
-      }
-      }
-      
-    }
+  if (codigoColores && codigoColoresSeparado.length >= 2) {
+    codigoColoresSeparado = codigoColoresSeparado.slice(0, 2);
+    for (let i = 1; i < colorCodificaciones.length; i++) {
+        codigoColoresSeparado.forEach(color => { result += colorCodificaciones[i]});
+  }
+  console.log(result);
+  } else {
+    console.log('%cCódigo de colores erroneo.');
+  }
 }
-    
-  let color1: string = "marrón";
-  let color2: string = "verde";
-  let resistorArray = new Array(2);
-  console.log(`decodeResistor: ${decodeResistor(color1, color2)}`);
+
+var colorResistencia = "marron-verde"
+console.log(`Color de la resistencia: ${colorResistencia}\n`);
+console.log(decodeResistor(colorResistencia));
+*/
