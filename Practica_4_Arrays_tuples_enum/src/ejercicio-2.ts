@@ -1,13 +1,14 @@
 export function meshArray(array = new Array('allow', 'lowering', 'ringmaster', 'terror')) {
   var resultado = '';
-  var contador = 0;
-  var rangoPosicion = 0;
+  var aux = '';
   var letrasAceptadas =  /^[a-z]+$/;
   for(var i = 0; i < array.length;i++){
     for(var j = 1; j < array.length; j++){
-      
+      if(array[i].endsWith('low') && array[j].startsWith('low')){
+        console.log(true);
+      }
     } 
-  }
+  }/*
     for (let j = 0; j < palabras.length - 1; j++) {
       coincidenciaEncontrada = false;
       posicionCoincidencia = 0;
@@ -27,8 +28,8 @@ export function meshArray(array = new Array('allow', 'lowering', 'ringmaster', '
     } else {
       console.log('Error al encadenar');
     }
-  }
-  
+  }*/
+}  
   
   var array1 = new Array('allow', 'lowering', 'ringmaster', 'terror'); 
   var array2= new Array('kingdom', 'dominator', 'notorious', 'usual', 'allegory');

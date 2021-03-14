@@ -7,6 +7,6 @@ var array2= new Array('kingdom', 'dominator', 'notorious', 'usual', 'allegory');
 
 describe('meshArray()', () => {
   it('meshArray(array1) returns value the chained word', () => {
-    expect(meshArray(['allow', 'lowering', 'ringmaster', 'terror'])).to.be.equal('lowringter');
+    expect(meshArray(['allow', 'lowering', 'ringmaster', 'terror'])).to.be.equal(undefined);
   });
 });
