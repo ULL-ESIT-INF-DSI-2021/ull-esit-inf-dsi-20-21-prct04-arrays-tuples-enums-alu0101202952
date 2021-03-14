@@ -1,4 +1,4 @@
-export function decodeResistor(codigoColores: String) {
+/*export function decodeResistor(codigoColores: String) {
   const colorCodificaciones: string[] = ['negro', 'marron', 'rojo', 'naranja','amarillo', 'verde', 'azul', 'violeta', 'gris', 'blanco'];
   let codigoColoresSeparado = codigoColores.split('-');
   let result: String = '';
@@ -17,3 +17,4 @@ export function decodeResistor(codigoColores: String) {
 var colorResistencia = "marron-verde"
 console.log(`Color de la resistencia: ${colorResistencia}\n`);
 console.log(decodeResistor(colorResistencia));
+*/
