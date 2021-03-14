@@ -1,12 +1,19 @@
-/**
- * Adds two numbers
- * @param firstNumber Consists of the first numeric operand of the addition
- * @param secondNumber Consists of the second numeric operand of the addition
- * @return The addition of the two numbers `firstNumber` and `secondNumber`
- *
- * Usage:
- * ```typescript
- * add(1, 7) = 8
- * add(1.7, 3.5) = 5.2
- * ```
- */
+export function decodeResistor(codigoColores: String) {
+  const colorCodificaciones: string[] = ['negro', 'marron', 'rojo', 'naranja','amarillo', 'verde', 'azul', 'violeta', 'gris', 'blanco'];
+  let codigoColoresSeparado = codigoColores.split('-');
+  let result: String = '';
+
+  if (codigoColores && codigoColoresSeparado.length >= 2) {
+    codigoColoresSeparado = codigoColoresSeparado.slice(0, 2);
+    for (let i = 1; i < colorCodificaciones.length; i++) {
+        codigoColoresSeparado.forEach(color => { result += colorCodificaciones[i]});
+  }
+  console.log(result);
+  } else {
+    console.log('%cCódigo de colores erroneo.');
+  }
+}
+
+var colorResistencia = "marron-verde"
+console.log(`Color de la resistencia: ${colorResistencia}\n`);
+console.log(decodeResistor(colorResistencia));

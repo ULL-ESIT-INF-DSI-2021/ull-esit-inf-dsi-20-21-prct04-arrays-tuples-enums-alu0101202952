@@ -1,4 +1,3 @@
-declare function decodeResistor(color1: string, color2: string): void;
-declare let color1: string;
-declare let color2: string;
-declare let resistorArray: any[];
+declare function meshArray(palabras: String[]): void;
+declare const array1: String[];
+declare const vector2: String[];
