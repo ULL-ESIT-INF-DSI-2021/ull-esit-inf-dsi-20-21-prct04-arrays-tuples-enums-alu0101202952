@@ -1,4 +1,3 @@
-"use strict";
 //EJERCICIO 1: DECODIFICADOR DE RESISTENCIA
 /*
 function decodeResistor(codigoColores: String) {
@@ -21,53 +20,54 @@ var colorResistencia = "marron-verde"
 console.log(`Color de la resistencia: ${colorResistencia}\n`);
 console.log(decodeResistor(colorResistencia));
 */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.meshArray = void 0;
 // Ejercicio 2
-function meshArray(array = new Array('allow', 'lowering', 'ringmaster', 'terror')) {
-    var resultado = '';
-    var aux = '';
-    var letrasAceptadas = /^[a-z]+$/;
-    for (var i = 0; i < array.length; i++) {
-        for (var j = 1; j < array.length; j++) {
-            aux += array[i];
-            if (array[i].endsWith('low') && array[j].startsWith('low')) {
-                aux += 'low';
-            }
-            else if (array[i].endsWith('ring') && array[j].startsWith('ring')) {
-                aux += 'ring';
-            }
-            else if (array[i].endsWith('ter') && array[j].startsWith('ter')) {
-                aux += 'ter';
-            }
-        }
+/*
+export function meshArray(array = new Array('allow', 'lowering', 'ringmaster', 'terror')) {
+  var resultado = '';
+  var aux = '';
+  var letrasAceptadas =  /^[a-z]+$/;
+  for(var i = 0; i < array.length;i++){
+    for(var j = 1; j < array.length; j++){
+      aux += array[i];
+      if(array[i].endsWith('low') && array[j].startsWith('low')){
+        aux += 'low';
+      } else if(array[i].endsWith('ring') && array[j].startsWith('ring')){
+        aux += 'ring';
+      } else if(array[i].endsWith('ter') && array[j].startsWith('ter')){
+        aux += 'ter';
+      }
     }
-    console.log(aux);
-    /*
-      for (let j = 0; j < palabras.length - 1; j++) {
-        coincidenciaEncontrada = false;
-        posicionCoincidencia = 0;
-        for (let i = palabras[j].length - 1; i >= 0; i--) {
-          if (!coincidenciaEncontrada && palabras[j][i] === palabras[j + 1][0]) {
-            posicionCoincidencia = palabras[j].slice(i, palabras[j].length).length;
-            coincidenciaEncontrada = true;
-          }
-        }
-        if (coincidenciaEncontrada && palabras[j].substr(-posicionCoincidencia, palabras[2].length) === palabras[j + 1].slice(0, posicionCoincidencia)) {
-          resultado += palabras[j].substr(-posicionCoincidencia, palabras[2].length);
-          contadorCoincidencias++;
-        }
-      }
-      if (contadorCoincidencias === (palabras.length - 1)) {
-        console.log('Resultado: ' + resultado);
-      } else {
-        console.log('Error al encadenar');
-      }
-    }*/
+  }
+  console.log(aux);
 }
-exports.meshArray = meshArray;
+  
 var array1 = new Array('allow', 'lowering', 'ringmaster', 'terror');
-var array2 = new Array('kingdom', 'dominator', 'notorious', 'usual', 'allegory');
+var array2= new Array('kingdom', 'dominator', 'notorious', 'usual', 'allegory');
+
 console.log(`Array 1: ${meshArray(array1)}`);
 console.log(`\n********************************************************\n`);
 console.log(`Array 2: ${meshArray(array2)}`);
+*/
+//EJERCICIO 3
+function meanAndConcatenate(array) {
+    const letrasAceptadas = /^[a-z A-Z]$/;
+    const numerosAceptados = /^[0-9]$/;
+    var media = 0;
+    var contadorNumeros = 0;
+    var resultado = '';
+    for (var i = 0; i < 1; i++) {
+        for (let j = 0; j < array.length; j++) {
+            if (letrasAceptadas.test(String(array[j]))) {
+                resultado = array[j];
+            }
+            else {
+                media += array[j];
+                contadorNumeros++;
+            }
+        }
+    }
+    media = media / contadorNumeros;
+    return [media, resultado];
+}
+var array1 = ['u', 6, 'd', 1, 'i', 'w', 6, 's', 't', 4, 'a', 6, 'g', 1, 2, 'w', 8, 'o', 2, 0];
+console.log(meanAndConcatenate(array1));

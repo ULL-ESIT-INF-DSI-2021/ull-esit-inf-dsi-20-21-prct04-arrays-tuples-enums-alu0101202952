@@ -1,1 +1,2 @@
-export declare function meshArray(array?: string[]): void;
+declare function meanAndConcatenate(array: []): (number | String)[];
+declare var array1: [];
