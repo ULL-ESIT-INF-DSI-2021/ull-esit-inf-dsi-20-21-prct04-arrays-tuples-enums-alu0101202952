@@ -97,9 +97,7 @@ También necesitamos crear a partir de este el **tsconfig.json** con la ruta de 
 
 Manualmente, se crearía ambos directorios donde trabajaremos. 
 
-También necesitaremos una compilación con control automático de cambios que instalaremos con el comando `npm install --save-dev tsc-watch`, tal que:
-
-![Compilacion control de cambios automáticos](https://i.imgur.com/TfNDhqN.jpg)
+También necesitaremos una compilación con control automático de cambios que instalaremos con el comando `npm install --save-dev tsc-watch`.
 
 Por último en la organización de la estructura básica será la instalación del paquete **EsLint**, esto por si quisiéramos comprobar la sintaxis de nuestro código, encontrar y solucionar problemas en el mismo. Primero lo instalamos con el comando:
 
@@ -113,9 +111,6 @@ Luego modificar el fichero .eslint que se crea con las reglas correspondientes, 
 
 ![Esdlint configuracion fichero](https://i.imgur.com/pvViLkf.jpg)
 
-Quedando la primera estructura básica de esta práctica del modo: 
-
-![Estructura básica](https://i.imgur.com/tJ7j521.jpg)
 
 Tras la estructura básica nos dedicaremos a trabajar en el directorio `./src` donde alojaremos los ficheros correspondientes a los ejercicios que se nos plantea en esta práctica, además de preparar la documentación con typedoc y las pruebas unitarias (TDD) con Mocha y Chai.
 
@@ -128,14 +123,11 @@ Tras la estructura básica nos dedicaremos a trabajar en el directorio `./src` d
 
 Para conocer más sobre esta herramienta consultar [Typedoc](https://typedoc.org/). Como ya desde la práctica 3 nos habíamos introducido a la herramienta **Typedoc**, solo queda seguir los mismos pasos mecánicos para esta práctica. Dicho informe creado en Typedoc hecho con los comentarios de los ejercicios de esta práctica se aloja en:
 
-[Informe Typedoc Práctica 5]() 
+[Informe Typedoc Práctica 4]() 
 
 O también mirando en los apartados **Objetivos** y **Bibliografía/ webgrafía** de este informe.
 
-Comenzamos con la instalación de typedoc:
-
-![Instalación typedoc](https://i.imgur.com/MgB701j.jpg)
-
+Comenzamos con la instalación de typedoc con el comando > `npm install --save-dev typedoc`.
 
 Con ello podemos ver que se ha creado un directorio, que es como organizará typedoc la documentación que es por módulos, creando así `./node_modules`. Continuaremos con la configuración para poder usar Typedoc, primero si no se ha creado por defecto crear el **typedoc.json**, lo creamos y le añadimos la ruta de los ficheros a los que haremos el seguimiento de documentación. Y en el apartado `"out: "` pondremos el directorio donde se alojará toda esa documentación. Tras guardar dicha configuración se genereará automáticamente el directorio `./doc`.
 
