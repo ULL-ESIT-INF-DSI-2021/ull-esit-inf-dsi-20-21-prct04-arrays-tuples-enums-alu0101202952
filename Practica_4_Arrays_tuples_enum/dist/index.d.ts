@@ -1,1 +1,2 @@
-export declare function meshArray(array?: string[]): void;
+declare function moveZeros(array: number[]): number[];
+declare var array1: number[];

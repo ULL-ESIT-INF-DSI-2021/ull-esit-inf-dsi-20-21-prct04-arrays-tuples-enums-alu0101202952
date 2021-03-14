@@ -1,4 +1,13 @@
-/*export function meshArray(array = new Array('allow', 'lowering', 'ringmaster', 'terror')) {
+/**
+ * ### EJERCICIO 2:
+ * FUNCIÓN **meshArray()**
+ * #### ¿En qué consiste?
+ * Queremos sacar la palarba encadenada final
+ * @param array es un array de strings predefinidas que se pasa a la función para sacar la palabra encadenada 
+ * @return resultado es un string vacío donde se almacenará la palabra encadenada final resultante
+ */
+
+export function meshArray(array = new Array('allow', 'lowering', 'ringmaster', 'terror')) {
     var resultado = '';
     var aux = '';
     var letrasAceptadas =  /^[a-z]+$/;
@@ -17,10 +26,15 @@
     console.log(aux);
   }  
     
+/**
+ * ```typescript
+ * 
+ * array1 = new Array('allow', 'lowering', 'ringmaster', 'terror'); 
+ * @return `lowering`
+ * 
+ * ```
+ */
   var array1 = new Array('allow', 'lowering', 'ringmaster', 'terror'); 
-  var array2= new Array('kingdom', 'dominator', 'notorious', 'usual', 'allegory');
-  
   console.log(`Array 1: ${meshArray(array1)}`);
-  console.log(`\n********************************************************\n`);
-  console.log(`Array 2: ${meshArray(array2)}`);
-  */
+
+  
