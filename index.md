@@ -308,7 +308,6 @@ Como se comprueba el encadenamiento de palabra se hace un commit y se sube al re
 Finalizando así mi código, y mis pruebas unitarias del ejercicio 2.
 
 
-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
@@ -326,10 +325,78 @@ La idea es que con los caracteres numéricos me devuelva la media y con las letr
 ![fallo](https://i.imgur.com/4WS6DEA.jpg)
 
 Como se observa da fallo, hago un git commit e implemento el código.
+En el código intenté implementar esta función pero a la hora de adaptarlo a una de unión de tipos me resultó dificultoso y por eso tuve que hacerlo con expresiones regulares:
+
+![codigo](https://i.imgur.com/oy8BKGn.jpg)
+
+Al final quedó:
+
+![codigo](https://i.imgur.com/CmLzbzc.jpg)
+
+Dándome acierto en la expectativa de la prueba:
+
+![acierto](https://i.imgur.com/TBuUqZl.jpg)
+
+Finalizando así mi código, y mis pruebas unitarias del ejercicio 3.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
+### EJERCICIO 4
+
+En este apartado se nos plantea un array con numeros y ceros, y dichos ceros ir colocándolos en la derecha del array, y retornar el array, una vez planteado mentalmente la estructura, hacemos la expectativa, la cual como ha pasado falla pues no está el método moveZeros():
+
+![fallo expect](https://i.imgur.com/kQteTBx.jpg)
+
+Hacemos un git commit para guardar los cambios y planteamos el código:
+
+![código](https://i.imgur.com/er52EKC.jpg)
+
+No fue difícil pues ya conocía un método de la clase Array en JS que te cambiaba los contenidos en un array y este problema fue sencillo de resolver
+
+Luego hice el commit con el acierto de expectativa y lo subí:
+
+![codigo acierto](https://i.imgur.com/TAVewL9.jpg)
+
+Finalizando así mi código, y mis pruebas unitarias del ejercicio 4.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+
+### EJERCICIO 5
+
+
+
+Finalizando así mi código, y mis pruebas unitarias del ejercicio 5.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+
+### EJERCICIO 6 
+
+
+Finalizando así mi código, y mis pruebas unitarias del ejercicio 6.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+
+### EJERCICIO 7
 
 ## DESARROLLO DEL INFORME CON GITHUB PAGES
 
@@ -337,6 +404,8 @@ Como se observa da fallo, hago un git commit e implemento el código.
 Tras finalizar la práctica se nos requiere un informe en con el formato de estilos de Markdown en **GitHub Pages**, para ello usamos la guía de estilos de Markdown en [Markdown guide](https://guides.github.com/features/mastering-markdown/).
 
 Y así finalizamos esta práctica e informe redactado en el archivo **index.md**.
+
+Con esto he tenido problemas pues no se me crea GitHub Pages a pesra de excluir directorios que no quiero que se haga dicha documentación, poner .gitignore como se indicó, incluso añadiendo un .nojekyll
 
 
 
@@ -347,13 +416,13 @@ Y así finalizamos esta práctica e informe redactado en el archivo **index.md**
 ## CONCLUSIONES
 
 
-Conclusión sobre la práctica e informe, aquí plantearé la dinámica de la práctica y posibles dudas que me hayan surgido y solucionado. La práctica en sí hubieron ejercicios donde tuve dificultad donde acudí a la tutoría, pero hubieron ejercicios algo complejos de realizar si no usaba expresiones regulares. Estas me han beneficiado bastante a la hora de resolverlos y/o plantearlos. Por otro lado, la herramienta typedoc no me ha causado problemas y he sabido desenvolverme con ella. En cambio, otra uso y herramientas opcionales que quise empezar a usar como son: **Mocha** y **Chai**, me han causado dificultad. Sé que no eran obligatorias pero quise hacer esta práctica con esas herramientas y me ha saltado un error en la instalación que tendré que consultar con el profesor. Por último, el informe pues ya en la práctica 1, me familiaricé con la herramienta de GitHub Pages y ha sido sencillo.
+Conclusión sobre la práctica e informe, aquí plantearé la dinámica de la práctica y posibles dudas que me hayan surgido y solucionado. La práctica en sí hubieron ejercicios donde tuve dificultad donde acudí a la tutoría, como para el ejercicio 2, pero hubieron ejercicios algo complejos como otros muy sencillos de realizar, y otros que si no usaba expresiones regulares no sabía como implementarlo, a eso añadir que ir mediante pruebas unitarias o TDD, todo se hace más despacio y por tanto a veces más complicado. Por otro lado, la herramienta typedoc no me ha causado problemas y he sabido desenvolverme con ella. AL igual que con las herramientas **Mocha** y **Chai**, no me han causado dificultad. 
 
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
 ## BIBLIOGRAFÍA Y/O WEBGRAFÍA
 
 
-- [Enunciado práctica](https://ull-esit-inf-dsi-2021.github.io/prct03-types-functions/)
+- [Enunciado práctica](https://ull-esit-inf-dsi-2021.github.io/prct04-arrays-tuples-enums/)
 - [Repositorio con ejercicios y estructura básica](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-alu0101202952/tree/desarrollo/p3_Ejercicios_datos_funciones)
-- [Informe documentación con Typedoc](http://127.0.0.1:5500/p3_Ejercicios_datos_funciones/docs/index.html)
+- [Informe documentación con Typedoc]()
