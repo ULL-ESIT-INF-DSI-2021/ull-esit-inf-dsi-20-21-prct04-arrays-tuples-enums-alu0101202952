@@ -50,7 +50,7 @@
 ## OBJETIVOS
 
 
-Los objetivos en esta práctica será que resolver una serie de ejercicios de programación que nos permitirán conocer más en profundidad los objetos, clases e interfaces del lenguaje TypeScript. Para ello empleando los conocimientos además, que ya tenemos, en typedoc, y la realización de las pruebas unitarias siguiendo los pasos de TDD, es decir, realizar pruebas y expectativas, ver su fallo y corregir el código y volver con la prueba y sus expectativas para que den acierto. Para ello tendremos que usar Mocha y Chai.
+Los objetivos en esta práctica será resolver una serie de ejercicios de programación que nos permitirán conocer más en profundidad los arrays, tuplas y enumerados de TypeScript Para ello empleando los conocimientos además, que ya tenemos, en typedoc, y la realización de las pruebas unitarias siguiendo los pasos de TDD, es decir, realizar pruebas y expectativas, ver su fallo y corregir el código y volver con la prueba y sus expectativas para que den acierto. Para ello tendremos que usar Mocha y Chai por primera vez.
 
 - **ENLACE A LA DOCUMENTACIÓN EN TYPEDOC**
 > - [Informe documentación con Typedoc]()
@@ -65,7 +65,7 @@ Los objetivos en esta práctica será que resolver una serie de ejercicios de pr
 
 Antes de comenzar se nos requiere que aceptemos la tarea asignada en el GitHub Classroom:
 
-![Asignación GitHub Classroom](https://i.imgur.com/7sAZe2x.jpg)
+![Asignación GitHub Classroom](https://i.imgur.com/KrPJOqZ.jpg)
 
 Con ello ya podríamos trabajar en esta práctica.
 
@@ -81,13 +81,11 @@ Lo primero sería estructurar el workspace de nuestra práctica siguiendo alguno
 
 > - [Estrutura](https://ull-esit-inf-dsi-2021.github.io/typescript-theory/typescript-project-setup.html)
 
-Comenzamos creando la estructura básica, primero creando el directorio donde se alojará el repositorio clonado, tal que:
-
-![Clonar repositorio](https://i.imgur.com/wGvqmj6.jpg)
+Comenzamos creando la estructura básica, primero creando el directorio donde se alojará el repositorio clonado.
 
 Comenzamos modificando el **package.json** con el comando `npm init --yes` y creamos de forma automática el fichero de configuración **tsconfig.json** eso lo haremos con el comando `tsc --init` y se crearía el tsconfig.json por defecto, nosotros lo modificaremos algo más para poder trabajar correctamente, necesitaremos poner la opción **exclude []** dentro del tsconfig.json para indicarle al compilador los directorios que exluiría a la hora de compilar explícitamente quedando:
 
-![tsconfig.json](https://i.imgur.com/cMYGzU1.jpg)
+![tsconfig.json](https://i.imgur.com/Ry8bFKg.jpg)
 
 Esos 3 directorios los exluiríamos a la hora de hacer `npm start` y no fallar a la hora de compilar los tests o los node-modules.
 
