@@ -1,2 +1,2 @@
-declare function meanAndConcatenate(array: []): (number | String)[];
-declare var array1: [];
+declare function moveZeros(array: number[]): number[];
+declare var array1: number[];
