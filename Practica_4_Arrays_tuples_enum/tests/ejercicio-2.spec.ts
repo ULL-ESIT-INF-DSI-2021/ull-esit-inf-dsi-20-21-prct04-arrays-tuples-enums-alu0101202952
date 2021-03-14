@@ -1,3 +1,4 @@
+/*
 import 'mocha';
 import {expect} from 'chai';
 import {meshArray} from '../src/ejercicio-2';
@@ -10,3 +11,4 @@ describe('meshArray()', () => {
     expect(meshArray(['allow', 'lowering', 'ringmaster', 'terror'])).to.be.equal(undefined);
   });
 });
+*/
