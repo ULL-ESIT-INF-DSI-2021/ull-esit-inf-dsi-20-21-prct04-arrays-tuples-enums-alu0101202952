@@ -1,6 +1,6 @@
 import 'mocha';
 import {expect} from 'chai';
-import {moveZeros} from '../src/index';
+import {moveZeros} from '../src/ejercicio-4';
 
 
 var array1: number[] = [1, 0, 1, 2, 0, 1, 3];

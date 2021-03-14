@@ -1,6 +1,6 @@
 //EJERCICIO 1: DECODIFICADOR DE RESISTENCIA
 /*
-function decodeResistor(codigoColores: String) {
+export function decodeResistor(codigoColores: String) {
   const colorCodificaciones: string[] = ['negro', 'marron', 'rojo', 'naranja','amarillo', 'verde', 'azul', 'violeta', 'gris', 'blanco'];
   let codigoColoresSeparado = codigoColores.split('-');
   let result: String = '';
@@ -55,7 +55,7 @@ console.log(`Array 2: ${meshArray(array2)}`);
 
 //EJERCICIO 3
 /*
-function meanAndConcatenate(array: any[]) {
+export function meanAndConcatenate(array: any[]) {
   const letrasAceptadas: RegExp = /^[a-z A-Z]$/;
   const numerosAceptados: RegExp = /^[0-9]$/;
   var media: number = 0;
@@ -82,13 +82,11 @@ console.log(meanAndConcatenate(array1));
 
 
 //EJERCICIO 4
-function moveZeros(array: number[]) {
+/*
+export function moveZeros(array: number[]) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === 0) {
-      /**
-       * @method splice Con este método cambia el contenido de un array eliminando elementos
-       * existentes y/o agregando nuevos elementos
-       */
+  
       array.splice(i, 1);
       array.push(0);
     }
@@ -98,5 +96,5 @@ function moveZeros(array: number[]) {
 
 var array1: number[] = [1, 0, 1, 2, 0, 1, 3];
 console.log(moveZeros(array1));
-
+*/
 
