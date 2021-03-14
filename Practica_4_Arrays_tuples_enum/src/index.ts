@@ -54,6 +54,7 @@ console.log(`Array 2: ${meshArray(array2)}`);
 
 
 //EJERCICIO 3
+/*
 function meanAndConcatenate(array: any[]) {
   const letrasAceptadas: RegExp = /^[a-z A-Z]$/;
   const numerosAceptados: RegExp = /^[0-9]$/;
@@ -77,5 +78,22 @@ function meanAndConcatenate(array: any[]) {
 
 var array1: any[] = ['u', 6, 'd', 1, 'i', 'w', 6, 's', 't', 4, 'a', 6, 'g', 1, 2, 'w', 8, 'o', 2, 0];
 console.log(meanAndConcatenate(array1));
+*/
+
+
+//EJERCICIO 4
+/*
+function moveZeros(array: number[]) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === 0) {
+      array.splice(i, 1);
+      array.push(0);
+    }
+  }
+  return array;
+}
+
+var array1: number[] = [1, 0, 1, 2, 0, 1, 3];
+console.log(moveZeros(array1));*/
 
 
