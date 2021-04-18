@@ -53,7 +53,7 @@
 Los objetivos en esta práctica será resolver una serie de ejercicios de programación que nos permitirán conocer más en profundidad los arrays, tuplas y enumerados de TypeScript Para ello empleando los conocimientos además, que ya tenemos, en typedoc, y la realización de las pruebas unitarias siguiendo los pasos de TDD, es decir, realizar pruebas y expectativas, ver su fallo y corregir el código y volver con la prueba y sus expectativas para que den acierto. Para ello tendremos que usar Mocha y Chai por primera vez.
 
 - **ENLACE A LA DOCUMENTACIÓN EN TYPEDOC**
-> - [Informe documentación con Typedoc]()
+> - [Informe documentación con Typedoc](http://127.0.0.1:5500/docs/index.html)
 
 
 
@@ -123,7 +123,7 @@ Tras la estructura básica nos dedicaremos a trabajar en el directorio `./src` d
 
 Para conocer más sobre esta herramienta consultar [Typedoc](https://typedoc.org/). Como ya desde la práctica 3 nos habíamos introducido a la herramienta **Typedoc**, solo queda seguir los mismos pasos mecánicos para esta práctica. Dicho informe creado en Typedoc hecho con los comentarios de los ejercicios de esta práctica se aloja en:
 
-[Informe Typedoc Práctica 4]() 
+[Informe Typedoc Práctica 4](http://127.0.0.1:5500/docs/index.html) 
 
 O también mirando en los apartados **Objetivos** y **Bibliografía/ webgrafía** de este informe.
 
@@ -281,6 +281,13 @@ Y como vemos coge la sentencia de color de la resistencia, por tanto, creamos un
 
 ![git commit acierto](https://i.imgur.com/L0wYLSr.jpg)
 
+Después a este ejercicio he asignado los comentarios oportunos y snippets para crear la respectiva documentación con **Typedoc**
+
+![Typedoc](https://i.imgur.com/cKwFkcx.jpg)
+
+
+![Typedoc](https://i.imgur.com/LgkdgoS.jpg)
+
 Finalizando así mi código, y mis pruebas unitarias del ejercicio 1.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -304,6 +311,13 @@ Entonces comencé a plantear el código. Y al volver a ejecutar `npm run test` m
 ![acierto funcion](https://i.imgur.com/eVyxB8a.jpg)
 
 Como se comprueba el encadenamiento de palabra se hace un commit y se sube al repositorio.
+
+Después a este ejercicio he asignado los comentarios oportunos y snippets para crear la respectiva documentación con **Typedoc**
+
+![Typedoc](https://i.imgur.com/2vdOsl6.jpg)
+
+
+![Typedoc](https://i.imgur.com/JMoQbgn.jpg)
 
 Finalizando así mi código, y mis pruebas unitarias del ejercicio 2.
 
@@ -337,6 +351,13 @@ Dándome acierto en la expectativa de la prueba:
 
 ![acierto](https://i.imgur.com/TBuUqZl.jpg)
 
+Después a este ejercicio he asignado los comentarios oportunos y snippets para crear la respectiva documentación con **Typedoc**
+
+![Typedoc](https://i.imgur.com/QFSiac2.jpg)
+
+
+![Typedoc](https://i.imgur.com/ui1LXv4.jpg)
+
 Finalizando así mi código, y mis pruebas unitarias del ejercicio 3.
 
 
@@ -362,6 +383,13 @@ Luego hice el commit con el acierto de expectativa y lo subí:
 
 ![codigo acierto](https://i.imgur.com/TAVewL9.jpg)
 
+Después a este ejercicio he asignado los comentarios oportunos y snippets para crear la respectiva documentación con **Typedoc**
+
+![Typedoc](https://i.imgur.com/fluCbjN.jpg)
+
+
+![Typedoc](https://i.imgur.com/4kzKCoT.jpg)
+
 Finalizando así mi código, y mis pruebas unitarias del ejercicio 4.
 
 
@@ -373,6 +401,7 @@ Finalizando así mi código, y mis pruebas unitarias del ejercicio 4.
 
 ### EJERCICIO 5
 
+Se nos plantea crear una función multiplyAll que tome como parámetro un array de números. Esta función deberá devolver como resultado otra función que toma como argumento un único valor numérico y devuelve un nuevo array.
 
 
 Finalizando así mi código, y mis pruebas unitarias del ejercicio 5.
@@ -386,6 +415,7 @@ Finalizando así mi código, y mis pruebas unitarias del ejercicio 5.
 
 ### EJERCICIO 6 
 
+Un punto describe una posición determinada respecto a un sistema de coordenadas preestablecido. Suponiendo un sistema de dos coordenadas (x, y), un punto en el espacio se denotaría de la forma Point(X, Y).
 
 Finalizando así mi código, y mis pruebas unitarias del ejercicio 6.
 
@@ -397,6 +427,31 @@ Finalizando así mi código, y mis pruebas unitarias del ejercicio 6.
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
 ### EJERCICIO 7
+
+A partir del desarrollo realizado para el ejericio anterior, cree un tipo de datos que sea capaz de definir puntos de 3 o más dimensiones.
+
+Finalizando así mi código, y mis pruebas unitarias del ejercicio 5.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+
+### EJERCICIO 8
+
+A partir de un tablero bidimensional con tamaño [X, Y], donde X es el número de filas e Y el número de columnas. Considere que un agente está situado en un punto del tablero con coordenadas $(x_0, y_0)$ y tiene que llegar a un objetivo $(x_1, y_1)$.
+
+
+Finalizando así mi código, y mis pruebas unitarias del ejercicio 5.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
 ## DESARROLLO DEL INFORME CON GITHUB PAGES
 
@@ -425,4 +480,4 @@ Conclusión sobre la práctica e informe, aquí plantearé la dinámica de la pr
 
 - [Enunciado práctica](https://ull-esit-inf-dsi-2021.github.io/prct04-arrays-tuples-enums/)
 - [Repositorio con ejercicios y estructura básica](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-alu0101202952/tree/desarrollo/p3_Ejercicios_datos_funciones)
-- [Informe documentación con Typedoc]()
+- [Informe documentación con Typedoc](http://127.0.0.1:5500/docs/index.html)
